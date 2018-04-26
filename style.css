@@ -1,0 +1,14 @@
+/* Stylesheet for The Advantage microsite */
+
+/* 1. Imported fonts from Google*/
+@import url('https://fonts.googleapis.com/css?family=Arimo|GFS+Didot');
+
+/* 2. Global styling */
+
+h1 {
+  font-family: 'GFS Didot', serif;
+}
+
+h2,h3,h4,h5,h6,p {
+  font-family: 'Arimo', sans-serif;
+}
