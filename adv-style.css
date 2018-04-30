@@ -128,5 +128,22 @@ font-weight: 400;
 .supp-text article.Two {
   width:60%;
 }
+}
 
+@media only screen and (max-width: 1024px) {
+  .intro-text {
+  max-width:100%;
+}
+}
+
+@media only screen and (max-width: 1162px) {
+  .intro-text {
+  max-width:100%;
+}
+}
+
+@media only screen and (min-width:1163px) and (max-width:1382px) {
+  .intro-text {
+    max-width:50%;
+  }
 }
