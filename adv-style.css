@@ -5,7 +5,7 @@
 
 /* 2. Global styling */
 
-.content h2,h3,h4,h5,h6,p, .breadcrumbs.breadcrumbs-white a {
+.content h2,h3,h4,h5,h6,p, .breadcrumbs.breadcrumbs-white a, article.Two h2, article.Two p, article.Two a {
   font-family: 'Arimo', sans-serif;
 }
 
@@ -27,8 +27,8 @@ border-bottom: none;
   list-style-type:none;
   margin: 0;
   padding: 0;
-  background-color: #000;
   padding: 1rem;
+  background-color: #000;
   text-align: center;
 }
 
@@ -55,7 +55,7 @@ border-bottom: none;
   padding-right:0;
 }
 
-.content h2 {
+.content h2, .row h2 {
   color: #000;
   letter-spacing: 0;
 }
@@ -88,7 +88,7 @@ font-weight: 400;
     right: 0;
 }
 
-.content+.content {
+.content+.content, .row {
   border-top:none;
 }
 
@@ -177,6 +177,22 @@ a.btn:hover {
     align-self: center;
     }
 
+.flex-item {
+  padding:.5em;
+}
+
+article.Two h2 {
+    color: #000;
+    letter-spacing: 0;
+    margin-bottom: .6em;
+}
+
+article.Two a {
+  font-weight:700;
+  color: #2d7bab;
+  font-size: 20px;
+}
+
 /* Media queries */
 
 @media only screen and (min-width: 1440px) {
@@ -198,7 +214,7 @@ a.btn:hover {
 }
 
 @media only screen and (min-width: 1024px) {
-.content .inner {
+.content .inner, .row .inner {
     max-width: 75%;
 }
 }
@@ -268,5 +284,27 @@ a.btn:hover {
 }
   .adv-menu li a {
   padding: 0;
+}
+}
+
+@media only screen and (min-width: 900px) {
+.adv-courses article.Two {
+    float: left;
+    width: 40%;
+    margin-right: 20%;
+}
+}
+
+@media only screen and (min-width: 900px) {
+.adv-courses article.Two:nth-of-type(2n+2) {
+    float: right!important;
+    margin-right: 4em;
+}
+
+.adv-courses article.Two {
+    float: left;
+    width: 40%;
+    margin-left: 4em;
+    margin-right: 0;
 }
 }
