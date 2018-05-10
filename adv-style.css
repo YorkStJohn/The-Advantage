@@ -5,7 +5,7 @@
 
 /* 2. Global styling */
 
-.content h2,h3,h4,h5,h6,p, li, .breadcrumbs.breadcrumbs-white a, article.Two h2, article.Two p, article.Two a {
+.content h2,h3,h4,h5,h6,p,.supp-text li, .breadcrumbs.breadcrumbs-white a, article.Two h2, article.Two p, article.Two a {
   font-family: 'Arimo', sans-serif;
 }
 
@@ -315,5 +315,3 @@ article.Two a {
     margin-right: 0;
 }
 }
-
-
