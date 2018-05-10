@@ -37,12 +37,16 @@ border-bottom: none;
   color: #fff;
   text-align: center;
   text-decoration: none;
-  padding: 3rem;
+  padding: 2rem;
   font-size: 18px;
 }
 
 .adv-menu li a:hover {
     color: #e0e0e0;
+}
+
+.adv-menu li a.current {
+    font-weight: 800;
 }
 
 .masthead-image h1 span, .masthead-image h1, .masthead-image h2 {
@@ -310,4 +314,5 @@ article.Two a {
     margin-right: 0;
 }
 }
+
 
