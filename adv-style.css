@@ -5,7 +5,7 @@
 
 /* 2. Global styling */
 
-.content h2,h3,h4,h5,h6,p,.supp-text li, .breadcrumbs.breadcrumbs-white a, article.Two h2, article.Two p, article.Two a {
+.content h2,h3,h4,h5,h6,p, .flex-item h2,.supp-text li, .section-featured h2, .breadcrumbs.breadcrumbs-white a, article.Two h2, article.Two p, article.Two a {
   font-family: 'Arimo', sans-serif;
 }
 
@@ -13,6 +13,7 @@
   display:inline;
   border-right: 1px solid #bbb;
   background-image: none;
+  padding-left:0;
 }
 
 .adv-menu li:last-child {
@@ -59,9 +60,13 @@ border-bottom: none;
   padding-right:0;
 }
 
-.content h2, .row h2 {
-  color: #000;
-  letter-spacing: 0;
+.content h2, .row h2, .section-featured h2 {
+  color: #000!important;
+  letter-spacing: 0!important;
+}
+
+.section-featured h2 {
+  margin-bottom:1em!important;
 }
 
 .masthead-image h1 {
@@ -90,6 +95,7 @@ font-weight: 400;
     position: relative;
     top: 4em;
     right: 0;
+    max-width: 320px;
 }
 
 .content+.content, .row {
@@ -98,6 +104,10 @@ font-weight: 400;
 
 .adv-callout h4, .adv-callout h2 {
     color: #fff;
+}
+
+.adv-callout h4 {
+    font-size:22px;
 }
 
 .adv-callout a {
@@ -116,7 +126,7 @@ a.btn:hover {
 }
 
 .inner h2 {
-    line-height: 1.3em;
+    line-height: 1.6em;
 }
 
 .adv-callout h2 {
@@ -126,6 +136,7 @@ a.btn:hover {
 
 .supp-text article.Two:first-child {
   width:33%;
+  margin-top:3em;
 }
 
 .supp-text .text-right {
@@ -198,6 +209,9 @@ article.Two a {
   font-size: 20px;
 }
 
+article.Two a:hover {
+  color:#000;
+}
 
 
 /* Media queries */
@@ -284,7 +298,7 @@ article.Two a {
 }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:996px) {
   .adv-menu li {
   display:block;
   border-right: none;
@@ -314,4 +328,12 @@ article.Two a {
     margin-left: 4em;
     margin-right: 0;
 }
+}
+
+
+@media only screen and (min-width:996px) and (max-width:1378px) {
+    .adv-menu li a {
+      font-size:16px;
+      padding:1rem;
+    }
 }
